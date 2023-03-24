@@ -42,4 +42,9 @@ class Siswa extends CI_Controller {
 		$this->load->view('templates/footer');
         // echo "ini adalah method index di controller siswa";
 	}
+
+	function hapus($id){
+		$this->siswa_model->hapus($id);
+		redirect('siswa');
+	  }
 }

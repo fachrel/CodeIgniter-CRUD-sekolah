@@ -9,5 +9,10 @@ class Siswa_model extends CI_Model{
 
     function add_data($data){
         $this->db->insert('siswa',$data);
-      }
+    }
+
+    function hapus($id){
+        $this->db->where('id', $id);
+        $this->db->delete('siswa');
+    }
 }
