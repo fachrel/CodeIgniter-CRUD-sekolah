@@ -15,4 +15,14 @@ class Siswa_model extends CI_Model{
         $this->db->where('id', $id);
         $this->db->delete('siswa');
     }
+
+    function get_siswa_id($id){
+        $query = $this->db->get_where('siswa', array('id' => $id));
+        return $query;
+    }
+
+    function update($data){
+        $this->db->where('id', $data['id']);
+        $this->db->update('siswa', $data);
+      }
 }

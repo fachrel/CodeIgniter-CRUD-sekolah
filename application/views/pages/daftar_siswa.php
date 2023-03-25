@@ -50,7 +50,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 </td>
                 <td class="px-6 py-4 text-center">
                     <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline pr-2">Lihat</a>
-                    <a href="#" class="font-medium text-yellow-600 dark:text-yellow-500 hover:underline pr-2">Edit</a>
+                    <a href="<?= site_url('siswa/edit/'.$data->id)?>" class="font-medium text-yellow-600 dark:text-yellow-500 hover:underline pr-2">Edit</a>
                     <a href="<?= site_url('siswa/hapus/'.$data->id) ?>" class="font-medium text-red-600 dark:text-red-500 hover:underline">Hapus</a>
                 </td>
             </tr>
